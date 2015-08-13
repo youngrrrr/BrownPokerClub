@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'MinionProRegular';
+    src: url('../fonts/minion.otf');
+}
+html {
+}
+body {
+    background: url('../images/Brown Logo Top 6.jpg') no-repeat center fixed;
+    background-size: cover;
+    font:1em/1.4 sans-serif;
+}
+h1 {
+    font-family: 'MinionProRegular';
+    font-size: 6em;
+    text-align: center;
+}
+li {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    display: inline-block;
+    /*list-style: none;*/
+    /*white-space:nowrap;*/
+    /*margin-right: 10px;*/
+    /*border-radius: 25px;*/
+}
+li b {
+    opacity: 0;
+    color: #000;
+    max-width: 0; /* prior to transition */
+    display: inline-block;
+    font: 0.5em 'MinionProRegular';
+    padding-bottom: 0.7em;
+    /*top-margin: 50%;*/
+    -webkit-transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
+            transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
+}
+li a {
+    -webkit-transition: opacity 1s;
+            transition: opacity 1s;
+}
+li a:hover {
+    text-decoration: none;
+    /*transition: opacity 1s;*/
+    
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+-webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+li a.red-suit:hover{
+    color: rgba(196,30,58,0.5);
+}
+li a.blk-suit:hover{
+    color: rgba(0,0,0,0.5);
+}
+li:hover b {
+    opacity: 1;
+    max-width: 4em; /* on/after transition */
+    -webkit-transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
+            transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
+}
+.suit {
+    font-size: 4em;
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+}
+.blk-suit {
+    color: rgba(0,0,0,1);
+}
+.red-suit {
+    color: rgba(196,30,58,1);
+}
+.content-bar {
+    position: absolute;
+    bottom: 0;
+}
+@media(max-width:767px){
+    h1 {
+        font-size: 8vmin;
+    }
+    .suit {
+        font-size: 5vmin;
+    }
+}
+
+
+/*li a i {
+    float:right;
+    display: inline;
+    padding-right: 0em;
+    font: 1em/1 'MinionProRegular','rokkitt', sans-serif;
+}*/
+/*li b {
+    color: #000;
+    line-height:1;
+    font-size: 25px;
+    display: inline-block;
+    padding:.125em .375em;
+}*/
+/*li:hover {}*/
