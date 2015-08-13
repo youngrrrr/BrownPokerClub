@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'MinionProRegular';
+    src: url('../fonts/minion.otf');
+}
+body {
+    background: url('../images/Brown Top Right Half 4.jpg') no-repeat center fixed;
+    background-size: cover;
+    font:1em/1.4 sans-serif;
+}
+h1 {
+    font-family: 'MinionProRegular';
+    font-size: 3.75vmax;
+    text-align: center;
+    transition: ease-in-out .5s, opacity .5s;
+}
+h1:hover {
+    opacity: .25;
+    transition: ease-in-out .5s, opacity .5s;
+}
+li {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    display: inline-block;
+}
+li b {
+    color: rgba(0,0,0,0);
+    max-width: 0;
+    display: inline-block;
+    font: 0.5em 'MinionProRegular';
+    vertical-align: middle;
+    transition: max-width 1s, ease-in-out 1s;
+}
+li:hover b {
+    color: rgba(0,0,0,1);
+    max-width: 4em; /* on/after transition */
+    transition: max-width 1s, ease-in-out .5s;
+}
+li a {
+    transition: all .5s ease-in-out;
+}
+li a:hover {
+    text-decoration: none;
+}
+li a.red-suit:hover{
+    color: rgba(196,30,58,.25);
+}
+li a.blk-suit:hover{
+    color: rgba(0,0,0,.25);
+}
+.suit {
+    font-size: 3.75vmax;
+}
+.red-suit {
+    color: rgba(196,30,58,1);
+}
+.blk-suit {
+    color: rgba(0,0,0,1);
+}
+@media(max-width:767px){
+    body {
+        /*background: url('../images/Brown Long Full 1.jpg') no-repeat center fixed;*/
+    }
+}
