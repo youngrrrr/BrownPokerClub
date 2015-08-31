@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>The Brown Poker Club</title>
+	<title>Brown Poker Club</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="assets/favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/sticky-footer-navbar.css">
+	<link rel="stylesheet" href="assets/css/custom-navbar.css">
 </head>
 <body>
 	<!-- 
 	http://getbootstrap.com/examples/sticky-footer-navbar/
 	http://stackoverflow.com/questions/3795199/jquery-creating-an-html-block-that-i-can-insert-into-the-page
-	 -->
-	<nav class="navbar navbar-default navbar-static">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Project name</a>
-			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
+	-->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="row row-centered test">
+				<ul>
+					<div class="navbar-header col-xs-4">
+						<a class="navbar-brand" id="logo" href="/" target="_self">Brown Poker Club</a>
+					</div>
+					<div class="col-xs-2 text-center">
+						<li><a href="#about" class="suit blk-suit" id="about" target="_self">♠<b>About</b></a></li>
+					</div>
+					<div class="col-xs-2 text-center">
+						<li><a href="#sponsors" class="suit red-suit" id="sponsors" target="_self">♥<b>Sponsors</b></a></li>
+					</div>
+					<div class="col-xs-2 text-center">
+						<li><a href="#events" class="suit blk-suit" id="events" target="_self">♣<b>Events</b></a></li>
+					</div>
+					<div class="col-xs-2 text-center">
+						<li><a href="#members" class="suit red-suit" id="members" target="_self">♦<b>Members</b></a></li>
+					</div>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</nav>
 
 	<div class="container-fluid">
-		<div class="top-half">
-			<div class="row row-centered">
-				<ul class="col-sm-12">
-					<div class="col-sm-4 text-center">
-						<h1>Brown Poker Club</h1>
-					</div>
-					<div class="col-sm-2 text-center">
-						<li><a href="#about" class="suit blk-suit">♠<b>About</b></a></li>
-					</div>
-					<div class="col-sm-2 text-center">
-						<li><a href="#sponsors" class="suit red-suit">♥<b>Sponsors</b></a></li>
-					</div>
-					<div class="col-sm-2 text-center">
-						<li><a href="#events" class="suit blk-suit">♣<b>Events</b></a></li>
-					</div>
-					<div class="col-sm-2 text-center">
-						<li><a href="#members" class="suit red-suit">♦<b>Members</b></a></li>
-					</div>
-				</ul>
-			</div>
-		</div>
-		<div class="bottom-half">
+		<div class="content">
 		</div>
 	</div>
 
 	<footer class="footer">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-offset-4 col-xs-4 text-center">
-					<a href="http://youngrae.kim">Designed by</a>
+			<div class="row row-centered">
+				<div class="col-sm-offset-4 col-sm-4 text-center">
+					<ul>
+						<li>
+							<a href="mailto:brownpokerclub@gmail.com">Contact us</a>
+						</li>
+						<li>
+							<a href="http://youngrae.kim" target="_blank">Created by</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
