@@ -7,20 +7,26 @@ body {
     background-size: cover;
     font:1em/1.4 sans-serif;
 }
-h1 {
+a#logo {
     font-family: 'MinionProRegular';
-    font-size: 3.75vmax;
-    text-align: center;
+    color: rgba(0,0,0,1);
+    font-size: 3.5vw;
+    line-height: inherit;
+    text-decoration: none;
     transition: ease-in-out .5s, opacity .5s;
 }
-h1:hover {
+#logo:hover {
     opacity: .25;
     transition: ease-in-out .5s, opacity .5s;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
 li {
     overflow: hidden;
     background-color: rgba(0,0,0,0);
-    display: inline-block;
+    /*display: inline-block;*/
 }
 li b {
     color: rgba(0,0,0,0);
@@ -36,7 +42,7 @@ li:hover b {
     transition: max-width 1s, ease-in-out .5s;
 }
 li a {
-    transition: all .5s ease-in-out;
+    transition: ease-in-out .5s;
 }
 li a:hover {
     text-decoration: none;
@@ -48,7 +54,8 @@ li a.blk-suit:hover{
     color: rgba(0,0,0,.25);
 }
 .suit {
-    font-size: 3.75vmax;
+    font-size: 5vw;
+    line-height: inherit;
 }
 .red-suit {
     color: rgba(196,30,58,1);
@@ -60,4 +67,10 @@ li a.blk-suit:hover{
     body {
         /*background: url('../images/Brown Long Full 1.jpg') no-repeat center fixed;*/
     }
+    li b {
+        max-width: none;
+    }
+}
+footer.footer {
+    background-color: rgba(255,255,255,0);
 }
